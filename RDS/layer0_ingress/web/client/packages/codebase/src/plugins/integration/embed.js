@@ -23,6 +23,10 @@ export default {
                 if (event.data.length > 0) {
                     var payload = JSON.parse(event.data);
                     switch (payload.event) {
+                        case "from-nextcloud":
+                            const buttonElem = window.getElementById("getting-started-button");
+                            buttonElem.style.bottom = "2.5rem";
+                            break;
                         case "informations":
                             let parsed = JSON.parse(payload.data)
                             let info = parsed.jwt
