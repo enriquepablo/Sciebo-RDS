@@ -24,7 +24,7 @@ export default {
                     var payload = JSON.parse(event.data);
                     switch (payload.event) {
                         case "from-nextcloud":
-                            const buttonElem = window.getElementById("getting-started-button");
+                            const buttonElem = document.getElementById("getting-started-button");
                             buttonElem.style.bottom = "2.5rem";
                             break;
                         case "informations":
