@@ -19,7 +19,7 @@ Prerequisites of software:
 
 First we start from a clean slate:
 
-    $ minukube stop && minikube delete
+    $ minikube stop && minikube delete
 
 Then we set docker as the minikube driver, and start the minikube env:
 
